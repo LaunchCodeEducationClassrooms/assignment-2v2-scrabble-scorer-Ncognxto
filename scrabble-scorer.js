@@ -3,7 +3,6 @@
 const input = require("readline-sync");
 
 const oldPointStructure = {
-  0: [' '],
   1: ['A', 'E', 'I', 'O', 'U', 'L', 'N', 'R', 'S', 'T'],
   2: ['D', 'G'],
   3: ['B', 'C', 'M', 'P'],
@@ -125,6 +124,8 @@ function transform(object) {
   }
   return newPointStructureObject;
 };
+
+console.log(transform(oldPointStructure))
 
 let newPointStructure = transform(oldPointStructure);
 
