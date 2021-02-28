@@ -125,8 +125,6 @@ function transform(object) {
   return newPointStructureObject;
 };
 
-console.log(transform(oldPointStructure))
-
 let newPointStructure = transform(oldPointStructure);
 
 function runProgram() {
