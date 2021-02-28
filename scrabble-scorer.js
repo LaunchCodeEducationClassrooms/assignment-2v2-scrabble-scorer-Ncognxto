@@ -77,15 +77,15 @@ let scrabbleScore = function(word){
 const scoringAlgorithms = [
   { name: 'Simple Score',
     description: 'Each letter is worth 1 point.',
-    scorerFunction: simpleScore
+    scoringFunction: simpleScore
   },
   { name: 'Bonus Vowels',
     description: 'Vowels are 3 pts, consonants are 1 pt.',
-    scorerFunction: vowelBonusScore
+    scoringFunction: vowelBonusScore
   },
   { name: 'Scrabble',
     description: 'The traditional scoring algorithm',
-    scorerFunction: scrabbleScore
+    scoringFunction: scrabbleScore
   }
 ];
 
@@ -100,13 +100,13 @@ Enter 0, 1, or 2: `)
 
 if (number === '0') {
   console.log("algorithm name: ", scoringAlgorithms[0].name);
-  return `scorerFunction result: ${scoringAlgorithms[0].scorerFunction(word)}`;
+  return `scorerFunction result: ${scoringAlgorithms[0].scoringFunction(word)}`;
   } else if (number === '1') {
     console.log("algorithm name: ", scoringAlgorithms[1].name);
-    return `scorerFunction result: ${scoringAlgorithms[1].scorerFunction(word)}`;
+    return `scorerFunction result: ${scoringAlgorithms[1].scoringFunction(word)}`;
   } else if (number === '2') {
     console.log("algorithm name: ", scoringAlgorithms[2].name);
-    return `scorerFunction result: ${scoringAlgorithms[2].scorerFunction(word)}`;
+    return `scorerFunction result: ${scoringAlgorithms[2].scoringFunction(word)}`;
   } else {
     console.log('\nPlease enter a valid number\n')
   } 
